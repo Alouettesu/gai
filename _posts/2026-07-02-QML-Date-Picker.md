@@ -15,6 +15,8 @@ If you prefer to jump straight to the code, head over to the [repository](https:
 
 The foundation of the picker is the `SpinningWheel` component. It implements a single spinning wheel that displays arbitrary data. The user can select an item by clicking, scrolling, or dragging. The component accepts any type of data model: numeric, `ListModel`, JavaScript array, or `QAbstractItemModel`, and supports custom background, highlight, and delegate components. For numeric models and JavaScript arrays the default delegate is sufficient. For more complex models such as `ListModel` or `QAbstractItemModel` — which expose multiple roles — a custom delegate is required. Let us look at examples using each model type.
 
+All components are part of the Gai QML module, which lives in the imports/Gai folder of the repository.
+
 ### SpinningWheel properties
 
 - `model: var` — Data model (numeric, JavaScript array, `ListModel`, or `QAbstractItemModel`).
