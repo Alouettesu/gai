@@ -30,7 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   I like programming, and I like to share my knowledge with others. 
   This is my personal blog, where I will share my thoughts and experiences 
   on programming and other topics that interest me.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/gai" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Alouettesu
 
