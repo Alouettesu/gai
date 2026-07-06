@@ -105,17 +105,17 @@ Sometimes you only need to pick a year, a month, or a day. For these cases the l
 ```qml
 YearPicker {
     currentYear: 2026
-    range: { from: 2020, to: 2030 }
+    range: ({ from: 2020, to: 2030 })
 }
 
 MonthPicker {
     currentMonth: 5  // June (0-indexed)
-    range: { from: 0, to: 11 }
+    range: ({ from: 0, to: 11 })
 }
 
 DayPicker {
     currentDay: 15
-    range: { from: 1, to: 31 }
+    range: ({ from: 1, to: 31 })
 }
 ```
 
@@ -159,10 +159,10 @@ The `highlight` property sets a single highlight component for all three wheels 
 DatePicker {
     id: startDatePicker
     selectedDate: new Date(2026, 0, 1)
-    dateRange: {
+    dateRange: ({
         begin: new Date(2020, 0, 1),
         end: new Date(2030, 11, 31)
-    }
+    })
 }
 ```
 
@@ -291,10 +291,10 @@ import Gai
 Item {
     DatePicker {
         selectedDate: new Date(2026, 0, 1)
-        dateRange: {
+        dateRange: ({
             begin: new Date(2020, 0, 1),
             end: new Date(2030, 11, 31)
-        }
+        })
     }
 }
 ```
